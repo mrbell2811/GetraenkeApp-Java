@@ -1,0 +1,84 @@
+<resources>
+    <!-- App Identity -->
+    <string name="app_name">GeträkeApp</string>
+    <string name="app_version">1.0</string>
+    
+    <!-- Main Screen -->
+    <string name="main_title">Wähle deinen Namen</string>
+    <string name="main_subtitle">Tippe auf deinen Namen um ein Getränk zu buchen</string>
+    <string name="admin_access">Admin</string>
+    
+    <!-- Beverage Selection -->
+    <string name="beverage_title">Getränke auswählen</string>
+    <string name="beverage_subtitle">Wähle dein Getränk</string>
+    <string name="beverage_back">Zurück</string>
+    <string name="beverage_price_format">%.2f €</string>
+    
+    <!-- Quantity Confirmation -->
+    <string name="quantity_title">Menge bestätigen</string>
+    <string name="quantity_member">Mitglied: %s</string>
+    <string name="quantity_beverage">Getränk: %s</string>
+    <string name="quantity_price">Preis: %.2f €</string>
+    <string name="quantity_total">Gesamt: %.2f €</string>
+    <string name="quantity_increase">+</string>
+    <string name="quantity_decrease">-</string>
+    <string name="quantity_confirm">Bestätigen</string>
+    <string name="quantity_cancel">Abbrechen</string>
+    
+    <!-- Confirmation Dialog -->
+    <string name="confirmation_title">Buchung erfolgreich!</string>
+    <string name="confirmation_message">%s hat %d x %s für %.2f € gebucht</string>
+    
+    <!-- Admin Authentication -->
+    <string name="admin_title">Administrator Anmeldung</string>
+    <string name="admin_password_hint">Passwort eingeben</string>
+    <string name="admin_login">Anmelden</string>
+    <string name="admin_error">Falsches Passwort</string>
+    
+    <!-- Admin Panel -->
+    <string name="admin_panel_title">Verwaltung</string>
+    <string name="admin_members">Mitglieder verwalten</string>
+    <string name="admin_beverages">Getränke verwalten</string>
+    <string name="admin_export">Daten exportieren</string>
+    <string name="admin_logout">Abmelden</string>
+    
+    <!-- Member Management -->
+    <string name="member_management_title">Mitglieder verwalten</string>
+    <string name="member_add">Mitglied hinzufügen</string>
+    <string name="member_name_hint">Name eingeben</string>
+    <string name="member_save">Speichern</string>
+    <string name="member_delete_confirm">Mitglied %s löschen?</string>
+    
+    <!-- Beverage Management -->
+    <string name="beverage_management_title">Getränke verwalten</string>
+    <string name="beverage_add">Getränk hinzufügen</string>
+    <string name="beverage_name_hint">Getränke Name</string>
+    <string name="beverage_price_hint">Preis (€)</string>
+    <string name="beverage_delete_confirm">Getränk %s löschen?</string>
+    
+    <!-- Export -->
+    <string name="export_title">Daten exportieren</string>
+    <string name="export_date_from">Von Datum</string>
+    <string name="export_date_to">Bis Datum</string>
+    <string name="export_start">Export starten</string>
+    <string name="export_success">Export erfolgreich: %s</string>
+    <string name="export_error">Export fehlgeschlagen</string>
+    
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="save">Speichern</string>
+    <string name="delete">Löschen</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="loading">Laden...</string>
+    <string name="error_general">Ein Fehler ist aufgetreten</string>
+    
+    <!-- Touch Feedback -->
+    <string name="touch_feedback">Berührt</string>
+    
+    <!-- Accessibility -->
+    <string name="member_button_description">Mitglied %s auswählen</string>
+    <string name="beverage_button_description">%s für %.2f € auswählen</string>
+    <string name="quantity_increase_description">Menge erhöhen</string>
+    <string name="quantity_decrease_description">Menge verringern</string>
+</resources>

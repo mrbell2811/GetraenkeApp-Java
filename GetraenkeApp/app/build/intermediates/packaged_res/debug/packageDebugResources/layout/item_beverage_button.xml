@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/beverage_button_height"
+    android:layout_margin="@dimen/margin_small"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/club_surface"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/club_border"
+    app:strokeWidth="1dp"
+    app:cardMaxElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/padding_medium"
+        android:minHeight="@dimen/touch_target_min">
+
+        <!-- Category Icon -->
+        <ImageView
+            android:id="@+id/imageViewCategoryIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:src="@drawable/ic_cold_drink"
+            android:contentDescription="Category Icon"
+            tools:src="@drawable/ic_cold_drink" />
+
+        <!-- Beverage Name -->
+        <TextView
+            android:id="@+id/textViewBeverageName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Beverage Name"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/club_on_surface"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Cola 0,33L" />
+
+        <!-- Price Badge -->
+        <TextView
+            android:id="@+id/textViewBeveragePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="0,00 €"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:background="@drawable/club_gradient"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            android:textColor="@color/club_on_primary"
+            android:minWidth="60dp"
+            android:gravity="center"
+            tools:text="€1,50" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

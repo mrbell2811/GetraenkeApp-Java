@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Club Color Scheme -->
+    <color name="club_primary">#4CAF50</color>          <!-- Green -->
+    <color name="club_primary_dark">#388E3C</color>     <!-- Dark Green -->
+    <color name="club_primary_light">#C8E6C9</color>    <!-- Light Green -->
+    <color name="club_white">#FFFFFF</color>            <!-- White -->
+    <color name="club_black">#000000</color>            <!-- Black -->
+    <color name="club_gray">#757575</color>             <!-- Gray for secondary text -->
+    <color name="club_gray_light">#E0E0E0</color>       <!-- Light Gray for dividers -->
+    
+    <!-- Material Design Colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Error and Success States -->
+    <color name="error_red">#F44336</color>
+    <color name="success_green">#4CAF50</color>
+    <color name="warning_orange">#FF9800</color>
+</resources>

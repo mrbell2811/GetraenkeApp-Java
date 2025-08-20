@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/club_background"
+    android:padding="@dimen/padding_medium"
+    tools:context=".ui.admin.ExportConfigurationActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="@dimen/padding_large"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            android:textColor="@color/club_on_primary"
+            android:background="@drawable/club_gradient"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Export Konfiguration"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:textColor="@color/club_on_background"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_medium" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            android:textColor="@color/club_on_primary"
+            android:background="@drawable/club_gradient"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp" />
+
+    </LinearLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_large"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium">
+
+            <!-- Local Export Section -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large"
+                app:cardBackgroundColor="@color/club_surface"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:strokeColor="@color/club_border"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_large">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lokaler Export"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        android:textColor="@color/club_primary"
+                        android:layout_marginBottom="@dimen/margin_medium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lokaler Ordner für CSV-Exports"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/club_muted_foreground"
+                        android:layout_marginBottom="@dimen/margin_small" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/margin_medium">
+
+                        <EditText
+                            android:id="@+id/editTextLocalPath"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_weight="1"
+                            android:hint="z.B. /sdcard/GetraenkeApp/Exports"
+                            android:textSize="@dimen/text_size_small"
+                            android:textColor="@color/club_on_surface"
+                            android:textColorHint="@color/club_muted_foreground"
+                            android:background="@drawable/member_card_background"
+                            android:paddingHorizontal="16dp"
+                            android:paddingVertical="16dp"
+                            android:layout_marginEnd="@dimen/margin_small" />
+
+                        <Button
+                            android:id="@+id/buttonBrowseLocal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="56dp"
+                            android:text="Durchsuchen"
+                            android:textSize="@dimen/text_size_small"
+                            android:textColor="@color/club_on_primary"
+                            android:background="@drawable/club_gradient"
+                            android:paddingHorizontal="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/margin_medium">
+
+                        <Button
+                            android:id="@+id/buttonTestLocal"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Test Export"
+                            android:textSize="@dimen/text_size_small"
+                            android:textStyle="bold"
+                            android:textColor="@color/club_primary"
+                            android:background="@drawable/member_card_background"
+                            android:layout_marginEnd="@dimen/margin_small" />
+
+                        <Button
+                            android:id="@+id/buttonMonthlyClosing"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Monatlicher Abschluss"
+                            android:textSize="@dimen/text_size_small"
+                            android:textStyle="bold"
+                            android:textColor="@color/club_on_primary"
+                            android:background="@drawable/club_gradient"
+                            android:layout_marginStart="@dimen/margin_small" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Network Export Section -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large"
+                app:cardBackgroundColor="@color/club_surface"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:strokeColor="@color/club_border"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_large">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Netzwerk Backup"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        android:textColor="@color/club_primary"
+                        android:layout_marginBottom="@dimen/margin_medium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Netzwerkordner für automatische Backups (UNC-Pfad oder Laufwerk)"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/club_muted_foreground"
+                        android:layout_marginBottom="@dimen/margin_small" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/margin_medium">
+
+                        <EditText
+                            android:id="@+id/editTextNetworkPath"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_weight="1"
+                            android:hint="z.B. \\\\server\\share\\backups oder Z:\\backups"
+                            android:textSize="@dimen/text_size_small"
+                            android:textColor="@color/club_on_surface"
+                            android:textColorHint="@color/club_muted_foreground"
+                            android:background="@drawable/member_card_background"
+                            android:paddingHorizontal="16dp"
+                            android:paddingVertical="16dp"
+                            android:layout_marginEnd="@dimen/margin_small" />
+
+                        <Button
+                            android:id="@+id/buttonTestNetwork"
+                            android:layout_width="wrap_content"
+                            android:layout_height="56dp"
+                            android:text="Testen"
+                            android:textSize="@dimen/text_size_small"
+                            android:textColor="@color/club_on_primary"
+                            android:background="@drawable/club_gradient"
+                            android:paddingHorizontal="16dp" />
+
+                    </LinearLayout>
+
+                    <!-- Auto Backup Settings -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/margin_medium">
+
+                        <CheckBox
+                            android:id="@+id/checkBoxAutoBackup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/club_primary" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Automatische Backups aktivieren"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textColor="@color/club_on_surface"
+                            android:layout_marginStart="@dimen/margin_small" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutBackupInterval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Intervall (Stunden):"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textColor="@color/club_on_surface"
+                            android:layout_marginEnd="@dimen/margin_medium" />
+
+                        <EditText
+                            android:id="@+id/editTextBackupInterval"
+                            android:layout_width="120dp"
+                            android:layout_height="48dp"
+                            android:text="24"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textColor="@color/club_on_surface"
+                            android:inputType="number"
+                            android:background="@drawable/member_card_background"
+                            android:paddingHorizontal="12dp"
+                            android:paddingVertical="12dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/text_size_small"
+                            android:textColor="@color/club_muted_foreground"
+                            android:layout_marginStart="@dimen/margin_medium"
+                            android:text="(1-168 Stunden)" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Status Section -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/club_accent"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:strokeColor="@color/club_border"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_large">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textSize="@dimen/text_size_large"
+                        android:textStyle="bold"
+                        android:textColor="@color/club_on_accent"
+                        android:layout_marginBottom="@dimen/margin_medium" />
+
+                    <TextView
+                        android:id="@+id/textViewLastBackup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Letztes Backup: Noch kein Backup"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/club_muted_foreground"
+                        android:layout_marginBottom="@dimen/margin_small" />
+
+                    <TextView
+                        android:id="@+id/textViewNextBackup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nächstes Backup: Automatische Backups deaktiviert"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/club_muted_foreground" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Loading Indicator -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

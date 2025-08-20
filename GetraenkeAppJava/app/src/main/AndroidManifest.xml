@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions for always-on display and file operations -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" 
+                     android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" 
+                     android:maxSdkVersion="32" />
+
+    <!-- Tablet optimization -->
+    <supports-screens
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
+    
+    <!-- Landscape orientation preference -->
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+
+    <application
+        android:name=".GetraenkeApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.GetraenkeApp"
+        tools:targetApi="31">
+        
+        <!-- Main Activity - Member Selection -->
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.GetraenkeApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Beverage Selection Activity -->
+        <activity
+            android:name=".ui.beverage.BeverageActivity"
+            android:screenOrientation="landscape"
+            android:parentActivityName=".ui.main.MainActivity" />
+        
+        <!-- Quantity Confirmation Activity -->
+        <activity
+            android:name=".ui.quantity.QuantityActivity"
+            android:screenOrientation="landscape"
+            android:parentActivityName=".ui.beverage.BeverageActivity" />
+        
+        <!-- Admin Authentication -->
+        <activity
+            android:name=".ui.admin.AdminAuthActivity"
+            android:screenOrientation="landscape"
+            android:parentActivityName=".ui.main.MainActivity" />
+        
+        <!-- Member Management -->
+        <activity
+            android:name=".ui.admin.MemberManagementActivity"
+            android:screenOrientation="landscape"
+            android:parentActivityName=".ui.admin.AdminAuthActivity" />
+        
+        <!-- Beverage Management -->
+        <activity
+            android:name=".ui.admin.BeverageManagementActivity"
+            android:screenOrientation="landscape"
+            android:parentActivityName=".ui.admin.AdminAuthActivity" />
+        
+        <!-- Export Activity -->
+        <activity
+            android:name=".ui.admin.ExportActivity"
+            android:screenOrientation="landscape"
+            android:parentActivityName=".ui.admin.AdminAuthActivity" />
+        
+        <!-- Background Backup Service -->
+        <service
+            android:name=".service.BackupService"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

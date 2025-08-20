@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    <!-- Base application theme with club branding -->
+    <style name="Theme.GetraenkeApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/club_primary</item>
+        <item name="colorPrimaryVariant">@color/club_primary_variant</item>
+        <item name="colorOnPrimary">@color/club_on_primary</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/club_secondary</item>
+        <item name="colorSecondaryVariant">@color/club_secondary_variant</item>
+        <item name="colorOnSecondary">@color/club_on_secondary</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/club_background</item>
+        <item name="colorSurface">@color/club_surface</item>
+        <item name="colorOnBackground">@color/club_on_background</item>
+        <item name="colorOnSurface">@color/club_on_surface</item>
+        
+        <!-- Error colors -->
+        <item name="colorError">@color/club_error</item>
+        <item name="colorOnError">@color/club_on_error</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/club_primary</item>
+        
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor" tools:targetApi="l">@color/club_background</item>
+        
+        <!-- Text appearance -->
+        <item name="android:textColorPrimary">@color/club_on_background</item>
+        <item name="android:textColorSecondary">@color/club_secondary</item>
+        
+        <!-- Button styles -->
+        <item name="materialButtonStyle">@style/Widget.GetraenkeApp.Button</item>
+    </style>
+
+    <style name="Theme.GetraenkeApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Base Button Style -->
+    <style name="Widget.GetraenkeApp.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/club_primary</item>
+        <item name="android:textColor">@color/club_on_primary</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Club Member Button Style -->
+    <style name="Widget.GetraenkeApp.Button.Member" parent="Widget.GetraenkeApp.Button">
+        <item name="backgroundTint">@color/club_primary</item>
+        <item name="android:textColor">@color/club_on_primary</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">@dimen/member_button_height</item>
+        <item name="android:minWidth">@dimen/member_button_min_width</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <!-- Club Beverage Button Style -->
+    <style name="Widget.GetraenkeApp.Button.Beverage" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/club_primary</item>
+        <item name="android:textColor">@color/club_primary</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:minHeight">@dimen/beverage_button_height</item>
+        <item name="android:minWidth">@dimen/beverage_button_min_width</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Quantity Control Button Style -->
+    <style name="Widget.GetraenkeApp.Button.Quantity" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/club_primary</item>
+        <item name="android:textColor">@color/club_on_primary</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">@dimen/quantity_button_size</item>
+        <item name="android:minWidth">@dimen/quantity_button_size</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <!-- Admin Button Style -->
+    <style name="Widget.GetraenkeApp.Button.Admin" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/club_secondary</item>
+        <item name="android:textColor">@color/club_secondary</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="cornerRadius">4dp</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="TextAppearance.GetraenkeApp.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/club_on_background</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.GetraenkeApp.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/club_on_background</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="TextAppearance.GetraenkeApp.Price" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/club_primary</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="Widget.GetraenkeApp.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/club_surface</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+    </style>
+
+</resources>

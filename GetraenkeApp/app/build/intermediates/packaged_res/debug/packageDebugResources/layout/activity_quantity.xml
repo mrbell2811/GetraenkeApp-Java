@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/club_background"
+    android:padding="@dimen/padding_large"
+    tools:context=".ui.quantity.QuantityActivity">
+
+    <!-- Header with Title -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/quantity_title"
+        android:textAppearance="@style/TextAppearance.GetraenkeApp.Headline"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_large"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Member and Beverage Info Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardInfo"
+        style="@style/Widget.GetraenkeApp.Card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_large"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textViewMemberName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.GetraenkeApp.Body"
+                android:textStyle="bold"
+                android:textColor="@color/club_primary"
+                tools:text="Max Mustermann" />
+
+            <TextView
+                android:id="@+id/textViewBeverageName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:textAppearance="@style/TextAppearance.GetraenkeApp.Body"
+                android:textStyle="bold"
+                tools:text="Cola 0,33L" />
+
+            <TextView
+                android:id="@+id/textViewUnitPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:textAppearance="@style/TextAppearance.GetraenkeApp.Price"
+                tools:text="1,50 € / Stück" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Quantity Controls -->
+    <LinearLayout
+        android:id="@+id/layoutQuantityControls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        app:layout_constraintTop_toBottomOf="@id/cardInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Minus Button -->
+        <Button
+            android:id="@+id/buttonMinus"
+            style="@style/Widget.GetraenkeApp.Button.Quantity"
+            android:layout_width="@dimen/quantity_button_size"
+            android:layout_height="@dimen/quantity_button_size"
+            android:text="@string/quantity_minus"
+            android:textSize="@dimen/text_size_large"
+            android:layout_marginEnd="@dimen/margin_large" />
+
+        <!-- Quantity Display -->
+        <TextView
+            android:id="@+id/textViewQuantity"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="@dimen/quantity_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/club_primary"
+            android:gravity="center"
+            tools:text="3" />
+
+        <!-- Plus Button -->
+        <Button
+            android:id="@+id/buttonPlus"
+            style="@style/Widget.GetraenkeApp.Button.Quantity"
+            android:layout_width="@dimen/quantity_button_size"
+            android:layout_height="@dimen/quantity_button_size"
+            android:text="@string/quantity_plus"
+            android:textSize="@dimen/text_size_large"
+            android:layout_marginStart="@dimen/margin_large" />
+
+    </LinearLayout>
+
+    <!-- Total Cost Display -->
+    <TextView
+        android:id="@+id/textViewTotalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:textAppearance="@style/TextAppearance.GetraenkeApp.Headline"
+        android:textColor="@color/club_primary"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/layoutQuantityControls"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Gesamt: 4,50 €" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:id="@+id/layoutActionButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:layout_marginHorizontal="@dimen/margin_medium"
+        app:layout_constraintTop_toBottomOf="@id/textViewTotalCost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/buttonCancel"
+            style="@style/Widget.GetraenkeApp.Button.Admin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:layout_marginEnd="@dimen/margin_medium" />
+
+        <Button
+            android:id="@+id/buttonConfirm"
+            style="@style/Widget.GetraenkeApp.Button.Member"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/confirm"
+            android:layout_marginStart="@dimen/margin_medium" />
+
+    </LinearLayout>
+
+    <!-- Loading Indicator -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

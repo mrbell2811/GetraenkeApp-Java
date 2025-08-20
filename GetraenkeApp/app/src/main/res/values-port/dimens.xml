@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Portrait Mode Specific Dimensions -->
+    
+    <!-- Button Sizes - Optimized for Portrait Tablet -->
+    <dimen name="member_button_min_width">240dp</dimen>
+    <dimen name="member_button_height">180dp</dimen>
+    <dimen name="beverage_button_min_width">280dp</dimen>
+    <dimen name="beverage_button_height">200dp</dimen>
+    
+    <!-- Text Sizes - Portrait optimized for readability -->
+    <dimen name="text_size_large">36sp</dimen>
+    <dimen name="text_size_medium">30sp</dimen>
+    <dimen name="text_size_small">24sp</dimen>
+    <dimen name="text_size_button">32sp</dimen>
+    
+    <!-- Grid Layout - Portrait specific spacing -->
+    <dimen name="grid_spacing">16dp</dimen>
+    <dimen name="grid_margin">20dp</dimen>
+    
+    <!-- Padding and Margins - Larger for portrait -->
+    <dimen name="padding_medium">20dp</dimen>
+    <dimen name="padding_large">28dp</dimen>
+    <dimen name="margin_medium">20dp</dimen>
+    <dimen name="margin_large">28dp</dimen>
+    
+    <!-- Quantity Controls - Larger for portrait use -->
+    <dimen name="quantity_button_size">70dp</dimen>
+    <dimen name="quantity_text_size">36sp</dimen>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dialog Input IDs -->
+    <item name="editTextMemberName" type="id" />
+    <item name="editTextBeverageName" type="id" />
+    <item name="editTextBeveragePrice" type="id" />
+    <item name="editTextBeverageCategory" type="id" />
+</resources>

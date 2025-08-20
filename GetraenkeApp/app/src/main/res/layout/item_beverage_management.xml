@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:rippleColor="@color/club_primary_light">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_standard">
+
+        <!-- Beverage Name -->
+        <TextView
+            android:id="@+id/textViewBeverageName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/club_text_primary"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/buttonEdit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Cola 0,33L" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/textViewBeveragePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/background_price_tag"
+            android:paddingStart="@dimen/margin_small"
+            android:paddingTop="2dp"
+            android:paddingEnd="@dimen/margin_small"
+            android:paddingBottom="2dp"
+            android:textColor="@color/club_background"
+            android:textSize="@dimen/text_size_body"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewBeverageName"
+            tools:text="€ 1,50" />
+
+        <!-- Active Status -->
+        <TextView
+            android:id="@+id/textViewActiveStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_standard"
+            android:textSize="@dimen/text_size_body"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/textViewBeveragePrice"
+            app:layout_constraintTop_toTopOf="@id/textViewBeveragePrice"
+            app:layout_constraintBottom_toBottomOf="@id/textViewBeveragePrice"
+            tools:text="Aktiv"
+            tools:textColor="@android:color/holo_green_dark" />
+
+        <!-- Beverage ID -->
+        <TextView
+            android:id="@+id/textViewBeverageId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textColor="@color/club_text_secondary"
+            android:textSize="@dimen/text_size_caption"
+            app:layout_constraintEnd_toStartOf="@id/buttonEdit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewBeveragePrice"
+            tools:text="ID: 1" />
+
+        <!-- Category (optional) -->
+        <TextView
+            android:id="@+id/textViewBeverageCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textColor="@color/club_text_secondary"
+            android:textSize="@dimen/text_size_caption"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/buttonEdit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewBeverageId"
+            tools:text="Kategorie: Softdrinks"
+            tools:visibility="visible" />
+
+        <!-- Creation Date -->
+        <TextView
+            android:id="@+id/textViewCreatedAt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textColor="@color/club_text_secondary"
+            android:textSize="@dimen/text_size_caption"
+            app:layout_constraintEnd_toStartOf="@id/buttonEdit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewBeverageCategory"
+            tools:text="Erstellt: 19.08.2025 14:30" />
+
+        <!-- Action Buttons Container -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Edit Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonEdit"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="@dimen/touch_target_size"
+                android:layout_height="@dimen/touch_target_size"
+                android:contentDescription="Bearbeiten"
+                app:icon="@drawable/ic_edit"
+                app:iconTint="@color/club_primary" />
+
+            <!-- Toggle Active Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonToggleActive"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:textColor="@color/club_primary"
+                android:textSize="@dimen/text_size_caption"
+                tools:text="Deaktivieren" />
+
+            <!-- Delete Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonDelete"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="@dimen/touch_target_size"
+                android:layout_height="@dimen/touch_target_size"
+                android:layout_marginTop="@dimen/margin_small"
+                android:contentDescription="Löschen"
+                app:icon="@drawable/ic_delete"
+                app:iconTint="@color/club_error" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

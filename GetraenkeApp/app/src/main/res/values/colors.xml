@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modern Club Colors - Based on getraenke-joy design -->
+    <!-- Primary Club Green - HSL(122, 39%, 49%) -->
+    <color name="club_primary">#6BA34F</color>
+    <color name="club_primary_variant">#7DB968</color>
+    <color name="club_primary_glow">#7DB968</color>
+    <color name="club_on_primary">#FFFFFF</color>
+    
+    <!-- Background and Surface -->
+    <color name="club_background">#FAFAFA</color>
+    <color name="club_secondary_background">#F5F5F5</color>
+    <color name="club_surface">#FFFFFF</color>
+    <color name="club_on_background">#262626</color>
+    <color name="club_on_surface">#262626</color>
+    
+    <!-- Secondary and Accent -->
+    <color name="club_secondary">#F1F7EC</color>
+    <color name="club_secondary_variant">#4A6B3A</color>
+    <color name="club_on_secondary">#4A6B3A</color>
+    
+    <color name="club_accent">#EAF4E6</color>
+    <color name="club_on_accent">#59894E</color>
+    
+    <!-- Muted and Border Colors -->
+    <color name="club_muted">#F5F5F5</color>
+    <color name="club_muted_foreground">#737373</color>
+    <color name="club_border">#D4E2CD</color>
+    
+    <!-- Category-specific colors -->
+    <color name="category_cold_bg">#EEF8FF</color>
+    <color name="category_cold_border">#C7E2FF</color>
+    <color name="category_warm_bg">#FEF7ED</color> 
+    <color name="category_warm_border">#FBBF24</color>
+    <color name="category_alcohol_bg">#F3F1FF</color>
+    <color name="category_alcohol_border">#C4B5FD</color>
+    
+    <!-- Status Colors -->
+    <color name="club_error">#DC2626</color>
+    <color name="club_on_error">#FFFFFF</color>
+    <color name="club_success">#16A34A</color>
+    <color name="club_warning">#D97706</color>
+    
+    <!-- Card and Shadow Colors -->
+    <color name="card_shadow">#26262626</color>
+    <color name="member_card_shadow">#266BA34F</color>
+    <color name="beverage_card_shadow">#1A6BA34F</color>
+    
+    <!-- Additional Club Colors (legacy compatibility) -->
+    <color name="club_primary_light">#7DB968</color>
+    <color name="club_text_primary">#262626</color>
+    <color name="club_text_secondary">#737373</color>
+    
+    <!-- Material Design Colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

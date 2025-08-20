@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="beverage_card_shadow">#1A6BA34F</color>
+    <color name="black">#FF000000</color>
+    <color name="card_shadow">#26262626</color>
+    <color name="category_alcohol_bg">#F3F1FF</color>
+    <color name="category_alcohol_border">#C4B5FD</color>
+    <color name="category_cold_bg">#EEF8FF</color>
+    <color name="category_cold_border">#C7E2FF</color>
+    <color name="category_warm_bg">#FEF7ED</color>
+    <color name="category_warm_border">#FBBF24</color>
+    <color name="club_accent">#EAF4E6</color>
+    <color name="club_background">#FAFAFA</color>
+    <color name="club_border">#D4E2CD</color>
+    <color name="club_error">#DC2626</color>
+    <color name="club_muted">#F5F5F5</color>
+    <color name="club_muted_foreground">#737373</color>
+    <color name="club_on_accent">#59894E</color>
+    <color name="club_on_background">#262626</color>
+    <color name="club_on_error">#FFFFFF</color>
+    <color name="club_on_primary">#FFFFFF</color>
+    <color name="club_on_secondary">#4A6B3A</color>
+    <color name="club_on_surface">#262626</color>
+    <color name="club_primary">#6BA34F</color>
+    <color name="club_primary_glow">#7DB968</color>
+    <color name="club_primary_light">#7DB968</color>
+    <color name="club_primary_variant">#7DB968</color>
+    <color name="club_secondary">#F1F7EC</color>
+    <color name="club_secondary_background">#F5F5F5</color>
+    <color name="club_secondary_variant">#4A6B3A</color>
+    <color name="club_success">#16A34A</color>
+    <color name="club_surface">#FFFFFF</color>
+    <color name="club_text_primary">#262626</color>
+    <color name="club_text_secondary">#737373</color>
+    <color name="club_warning">#D97706</color>
+    <color name="member_card_shadow">#266BA34F</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="beverage_button_height">180dp</dimen>
+    <dimen name="beverage_button_min_width">240dp</dimen>
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="dialog_corner_radius">8dp</dimen>
+    <dimen name="dialog_elevation">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="grid_margin">16dp</dimen>
+    <dimen name="grid_spacing">12dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+    <dimen name="member_button_height">160dp</dimen>
+    <dimen name="member_button_min_width">220dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_xlarge">32dp</dimen>
+    <dimen name="price_tag_radius">12dp</dimen>
+    <dimen name="quantity_button_size">60dp</dimen>
+    <dimen name="quantity_text_size">32sp</dimen>
+    <dimen name="text_size_body">16sp</dimen>
+    <dimen name="text_size_button">28sp</dimen>
+    <dimen name="text_size_caption">14sp</dimen>
+    <dimen name="text_size_large">32sp</dimen>
+    <dimen name="text_size_medium">26sp</dimen>
+    <dimen name="text_size_small">22sp</dimen>
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_xlarge">40sp</dimen>
+    <dimen name="touch_target_min">48dp</dimen>
+    <dimen name="touch_target_size">48dp</dimen>
+    <item name="editTextBeverageCategory" type="id"/>
+    <item name="editTextBeverageName" type="id"/>
+    <item name="editTextBeveragePrice" type="id"/>
+    <item name="editTextMemberName" type="id"/>
+    <string name="add_beverage">Getränk hinzufügen</string>
+    <string name="add_member">Mitglied hinzufügen</string>
+    <string name="admin_access">Admin</string>
+    <string name="admin_password">Passwort</string>
+    <string name="admin_title">Verwaltung</string>
+    <string name="app_name">GeträkeApp3.0</string>
+    <string name="back">Zurück</string>
+    <string name="backup">Backup</string>
+    <string name="beverage_name">Getränk</string>
+    <string name="beverage_name_hint">Getränk Name eingeben</string>
+    <string name="beverage_price">Preis</string>
+    <string name="beverage_price_hint">Preis eingeben</string>
+    <string name="beverage_title">Getränk wählen</string>
+    <string name="beverages">Getränke</string>
+    <string name="booking_confirmed">Buchung erfolgreich!</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="confirm">Bestätigen</string>
+    <string formatted="false" name="confirmation_format">%s\n%s x%d\n%.2f €</string>
+    <string name="delete">Löschen</string>
+    <string name="delete_beverage">Getränk löschen</string>
+    <string name="delete_beverage_confirm">Getränk "%s" wirklich löschen?</string>
+    <string name="delete_member">Mitglied löschen</string>
+    <string name="delete_member_confirm">Mitglied "%s" wirklich löschen?</string>
+    <string name="edit_beverage">Getränk bearbeiten</string>
+    <string name="edit_member">Mitglied bearbeiten</string>
+    <string name="end_date">Enddatum</string>
+    <string name="error">Fehler</string>
+    <string name="export">Export</string>
+    <string name="export_csv">CSV exportieren</string>
+    <string name="export_email">Per Email senden</string>
+    <string name="export_error">Export Fehler: %s</string>
+    <string name="export_period">Zeitraum</string>
+    <string name="export_success">Export erfolgreich</string>
+    <string name="export_title">Daten Export</string>
+    <string name="invalid_password">Ungültiges Passwort</string>
+    <string name="invalid_price">Ungültiger Preis</string>
+    <string name="layout">Layout</string>
+    <string name="loading">Laden...</string>
+    <string name="login">Anmelden</string>
+    <string name="logout">Abmelden</string>
+    <string name="main_title">Getränke auswählen</string>
+    <string formatted="false" name="member_beverage_format">%s - %s</string>
+    <string name="member_has_transactions">Mitglied kann nicht gelöscht werden (hat Transaktionen)</string>
+    <string name="member_name">Name</string>
+    <string name="member_name_hint">Mitglied Name eingeben</string>
+    <string name="members">Mitglieder</string>
+    <string name="price_format">%.2f €</string>
+    <string name="quantity_minus">-</string>
+    <string name="quantity_plus">+</string>
+    <string name="quantity_title">Anzahl bestätigen</string>
+    <string name="retry">Wiederholen</string>
+    <string name="save">Speichern</string>
+    <string name="search">Suchen...</string>
+    <string name="start_date">Startdatum</string>
+    <string name="success">Erfolg</string>
+    <string name="total_cost">Gesamt: %.2f €</string>
+    <style name="TextAppearance.GetraenkeApp.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/club_on_background</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextAppearance.GetraenkeApp.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/club_on_background</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.GetraenkeApp.Price" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/club_primary</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Theme.GetraenkeApp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/club_primary</item>
+        <item name="colorPrimaryVariant">@color/club_primary_variant</item>
+        <item name="colorOnPrimary">@color/club_on_primary</item>
+        
+        
+        <item name="colorSecondary">@color/club_secondary</item>
+        <item name="colorSecondaryVariant">@color/club_secondary_variant</item>
+        <item name="colorOnSecondary">@color/club_on_secondary</item>
+        
+        
+        <item name="android:colorBackground">@color/club_background</item>
+        <item name="colorSurface">@color/club_surface</item>
+        <item name="colorOnBackground">@color/club_on_background</item>
+        <item name="colorOnSurface">@color/club_on_surface</item>
+        
+        
+        <item name="colorError">@color/club_error</item>
+        <item name="colorOnError">@color/club_on_error</item>
+        
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/club_primary</item>
+        
+        
+        <item name="android:navigationBarColor" ns1:targetApi="l">@color/club_background</item>
+        
+        
+        <item name="android:textColorPrimary">@color/club_on_background</item>
+        <item name="android:textColorSecondary">@color/club_secondary</item>
+        
+        
+        <item name="materialButtonStyle">@style/Widget.GetraenkeApp.Button</item>
+    </style>
+    <style name="Theme.GetraenkeApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Widget.GetraenkeApp.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/club_primary</item>
+        <item name="android:textColor">@color/club_on_primary</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+    <style name="Widget.GetraenkeApp.Button.Admin" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/club_secondary</item>
+        <item name="android:textColor">@color/club_secondary</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="cornerRadius">4dp</item>
+    </style>
+    <style name="Widget.GetraenkeApp.Button.Beverage" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/club_primary</item>
+        <item name="android:textColor">@color/club_primary</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:minHeight">@dimen/beverage_button_height</item>
+        <item name="android:minWidth">@dimen/beverage_button_min_width</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+    <style name="Widget.GetraenkeApp.Button.Member" parent="Widget.GetraenkeApp.Button">
+        <item name="backgroundTint">@color/club_primary</item>
+        <item name="android:textColor">@color/club_on_primary</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">@dimen/member_button_height</item>
+        <item name="android:minWidth">@dimen/member_button_min_width</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="elevation">4dp</item>
+    </style>
+    <style name="Widget.GetraenkeApp.Button.Quantity" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/club_primary</item>
+        <item name="android:textColor">@color/club_on_primary</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">@dimen/quantity_button_size</item>
+        <item name="android:minWidth">@dimen/quantity_button_size</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="elevation">4dp</item>
+    </style>
+    <style name="Widget.GetraenkeApp.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/club_surface</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+    </style>
+</resources>

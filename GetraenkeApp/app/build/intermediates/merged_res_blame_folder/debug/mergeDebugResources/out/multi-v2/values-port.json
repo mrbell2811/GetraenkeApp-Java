@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.club.getraenkeapp-mergeDebugResources-45:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/res/values-port/dimens.xml",
+                    "from": {
+                        "startLines": "8,7,18,17,24,23,6,5,22,21,27,28,14,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "332,274,745,701,984,939,221,165,894,848,1090,1142,595,453,500,548",
+                        "endColumns": "54,57,42,43,43,44,52,55,44,45,51,49,47,46,47,46",
+                        "endOffsets": "382,327,783,740,1023,979,269,216,934,889,1137,1187,638,495,543,590"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "111,166,224,267,311,355,400,453,509,554,600,652,702,750,797,845",
+                        "endColumns": "54,57,42,43,43,44,52,55,44,45,51,49,47,46,47,46",
+                        "endOffsets": "161,219,262,306,350,395,448,504,549,595,647,697,745,792,840,887"
+                    }
+                },
+                {
+                    "source": "/Users/bierlich/.gradle/caches/8.13/transforms/210b1a19d5195ec2f9b435307a0229e8/transformed/appcompat-1.6.1/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

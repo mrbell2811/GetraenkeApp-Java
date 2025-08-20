@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/member_button_height"
+    android:layout_margin="@dimen/margin_small"
+    android:minHeight="@dimen/touch_target_min"
+    android:minWidth="@dimen/member_button_min_width"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/club_surface"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:strokeColor="@color/club_border"
+    app:strokeWidth="2dp"
+    app:cardMaxElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/padding_large">
+
+        <!-- Member Avatar Circle -->
+        <FrameLayout
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="@dimen/margin_medium">
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/member_avatar_background" />
+            
+            <TextView
+                android:id="@+id/textViewMemberInitials"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/club_on_primary"
+                tools:text="MM" />
+        </FrameLayout>
+
+        <!-- Member Name -->
+        <TextView
+            android:id="@+id/textViewMemberName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member Name"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/club_on_surface"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Max Mustermann" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

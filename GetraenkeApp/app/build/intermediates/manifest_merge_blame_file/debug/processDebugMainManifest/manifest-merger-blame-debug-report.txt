@@ -1,0 +1,477 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.club.getraenkeapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- CRITICAL: Always-on screen requires WAKE_LOCK permission -->
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:6:5-68
+12-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:6:22-65
+13
+14    <!-- CRITICAL: File export requires WRITE_EXTERNAL_STORAGE on API < 29 -->
+15    <uses-permission
+15-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:9:5-10:38
+16        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+16-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:9:22-78
+17        android:maxSdkVersion="28" />
+17-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:10:9-35
+18
+19    <!-- Network state for email export functionality -->
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:13:5-79
+20-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:13:22-76
+21    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+21-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:25:5-81
+21-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:25:22-78
+22    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+22-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:26:5-77
+22-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:26:22-74
+23
+24    <permission
+24-->[androidx.core:core:1.13.0] /Users/bierlich/.gradle/caches/8.13/transforms/553e2a7cf28ff69fc2b4eb122e33997d/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+25        android:name="com.club.getraenkeapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+25-->[androidx.core:core:1.13.0] /Users/bierlich/.gradle/caches/8.13/transforms/553e2a7cf28ff69fc2b4eb122e33997d/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+26        android:protectionLevel="signature" />
+26-->[androidx.core:core:1.13.0] /Users/bierlich/.gradle/caches/8.13/transforms/553e2a7cf28ff69fc2b4eb122e33997d/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+27
+28    <uses-permission android:name="com.club.getraenkeapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+28-->[androidx.core:core:1.13.0] /Users/bierlich/.gradle/caches/8.13/transforms/553e2a7cf28ff69fc2b4eb122e33997d/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+28-->[androidx.core:core:1.13.0] /Users/bierlich/.gradle/caches/8.13/transforms/553e2a7cf28ff69fc2b4eb122e33997d/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+29
+30    <application
+30-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:15:5-111:19
+31        android:name="com.club.getraenkeapp.GetraenkeApplication"
+31-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:16:9-45
+32        android:allowBackup="true"
+32-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:17:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.13.0] /Users/bierlich/.gradle/caches/8.13/transforms/553e2a7cf28ff69fc2b4eb122e33997d/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+34        android:dataExtractionRules="@xml/data_extraction_rules"
+34-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:18:9-65
+35        android:debuggable="true"
+36        android:extractNativeLibs="false"
+37        android:fullBackupContent="@xml/backup_rules"
+37-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:19:9-54
+38        android:icon="@mipmap/ic_launcher"
+38-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:20:9-43
+39        android:label="@string/app_name"
+39-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:21:9-41
+40        android:roundIcon="@mipmap/ic_launcher_round"
+40-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:22:9-54
+41        android:supportsRtl="true"
+41-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:23:9-35
+42        android:testOnly="true"
+43        android:theme="@style/Theme.GetraenkeApp" >
+43-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:24:9-50
+44
+45        <!-- File Provider for sharing exports -->
+46        <provider
+47            android:name="androidx.core.content.FileProvider"
+47-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:29:13-62
+48            android:authorities="com.club.getraenkeapp.fileprovider"
+48-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:30:13-64
+49            android:exported="false"
+49-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:31:13-37
+50            android:grantUriPermissions="true" >
+50-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:32:13-47
+51            <meta-data
+51-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:33:13-35:54
+52                android:name="android.support.FILE_PROVIDER_PATHS"
+52-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:34:17-67
+53                android:resource="@xml/file_paths" />
+53-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:35:17-51
+54        </provider>
+55
+56        <!-- Main Activity - Member Name Grid -->
+57        <activity
+57-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:39:9-48:20
+58            android:name="com.club.getraenkeapp.ui.main.MainActivity"
+58-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:40:13-49
+59            android:exported="true"
+59-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:41:13-36
+60            android:screenOrientation="unspecified"
+60-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:42:13-52
+61            android:theme="@style/Theme.GetraenkeApp.NoActionBar" >
+61-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:43:13-66
+62            <intent-filter>
+62-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:44:13-47:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:45:17-69
+63-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:45:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:46:17-77
+65-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:46:27-74
+66            </intent-filter>
+67        </activity>
+68
+69        <!-- Beverage Selection Activity -->
+70        <activity
+70-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:51:9-55:57
+71            android:name="com.club.getraenkeapp.ui.beverage.BeverageActivity"
+71-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:52:13-57
+72            android:exported="false"
+72-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:53:13-37
+73            android:screenOrientation="unspecified"
+73-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:54:13-52
+74            android:theme="@style/Theme.GetraenkeApp" />
+74-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:55:13-54
+75
+76        <!-- Quantity Confirmation Activity -->
+77        <activity
+77-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:58:9-62:57
+78            android:name="com.club.getraenkeapp.ui.quantity.QuantityActivity"
+78-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:59:13-57
+79            android:exported="false"
+79-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:60:13-37
+80            android:screenOrientation="unspecified"
+80-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:61:13-52
+81            android:theme="@style/Theme.GetraenkeApp" />
+81-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:62:13-54
+82
+83        <!-- Admin Panel Activity -->
+84        <activity
+84-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:65:9-69:57
+85            android:name="com.club.getraenkeapp.ui.admin.AdminActivity"
+85-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:66:13-51
+86            android:exported="false"
+86-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:67:13-37
+87            android:screenOrientation="unspecified"
+87-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:68:13-52
+88            android:theme="@style/Theme.GetraenkeApp" />
+88-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:69:13-54
+89
+90        <!-- Member Management Activity -->
+91        <activity
+91-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:72:9-76:57
+92            android:name="com.club.getraenkeapp.ui.admin.MemberManagementActivity"
+92-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:73:13-62
+93            android:exported="false"
+93-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:74:13-37
+94            android:screenOrientation="unspecified"
+94-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:75:13-52
+95            android:theme="@style/Theme.GetraenkeApp" />
+95-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:76:13-54
+96
+97        <!-- Beverage Management Activity -->
+98        <activity
+98-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:79:9-83:57
+99            android:name="com.club.getraenkeapp.ui.admin.BeverageManagementActivity"
+99-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:80:13-64
+100            android:exported="false"
+100-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:81:13-37
+101            android:screenOrientation="unspecified"
+101-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:82:13-52
+102            android:theme="@style/Theme.GetraenkeApp" />
+102-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:83:13-54
+103
+104        <!-- Export Configuration Activity -->
+105        <activity
+105-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:86:9-90:57
+106            android:name="com.club.getraenkeapp.ui.admin.ExportConfigurationActivity"
+106-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:87:13-65
+107            android:exported="false"
+107-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:88:13-37
+108            android:screenOrientation="unspecified"
+108-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:89:13-52
+109            android:theme="@style/Theme.GetraenkeApp" />
+109-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:90:13-54
+110
+111        <!-- User Statistics Activity -->
+112        <activity
+112-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:93:9-97:57
+113            android:name="com.club.getraenkeapp.ui.statistics.UserStatisticsActivity"
+113-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:94:13-65
+114            android:exported="false"
+114-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:95:13-37
+115            android:screenOrientation="unspecified"
+115-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:96:13-52
+116            android:theme="@style/Theme.GetraenkeApp" />
+116-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:97:13-54
+117
+118        <!-- Consumption Overview Activity -->
+119        <activity
+119-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:100:9-104:57
+120            android:name="com.club.getraenkeapp.ui.overview.ConsumptionOverviewActivity"
+120-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:101:13-68
+121            android:exported="false"
+121-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:102:13-37
+122            android:screenOrientation="unspecified"
+122-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:103:13-52
+123            android:theme="@style/Theme.GetraenkeApp" />
+123-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:104:13-54
+124
+125        <!-- Auto Backup Service -->
+126        <service
+126-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:107:9-109:40
+127            android:name="com.club.getraenkeapp.service.AutoBackupService"
+127-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:108:13-54
+128            android:exported="false" />
+128-->/Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:109:13-37
+129        <service
+129-->[androidx.room:room-runtime:2.6.1] /Users/bierlich/.gradle/caches/8.13/transforms/b1c5def6251b38344c378a1c8ee013a5/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+130            android:name="androidx.room.MultiInstanceInvalidationService"
+130-->[androidx.room:room-runtime:2.6.1] /Users/bierlich/.gradle/caches/8.13/transforms/b1c5def6251b38344c378a1c8ee013a5/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+131            android:directBootAware="true"
+131-->[androidx.room:room-runtime:2.6.1] /Users/bierlich/.gradle/caches/8.13/transforms/b1c5def6251b38344c378a1c8ee013a5/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+132            android:exported="false" />
+132-->[androidx.room:room-runtime:2.6.1] /Users/bierlich/.gradle/caches/8.13/transforms/b1c5def6251b38344c378a1c8ee013a5/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+133
+134        <provider
+134-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:29:9-37:20
+135            android:name="androidx.startup.InitializationProvider"
+135-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:30:13-67
+136            android:authorities="com.club.getraenkeapp.androidx-startup"
+136-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:31:13-68
+137            android:exported="false" >
+137-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:32:13-37
+138            <meta-data
+138-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:34:13-36:52
+139                android:name="androidx.work.WorkManagerInitializer"
+139-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:35:17-68
+140                android:value="androidx.startup" />
+140-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:36:17-49
+141            <meta-data
+141-->[androidx.emoji2:emoji2:1.2.0] /Users/bierlich/.gradle/caches/8.13/transforms/5835e350e6865b441f33e3c5b48fed87/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+142                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+142-->[androidx.emoji2:emoji2:1.2.0] /Users/bierlich/.gradle/caches/8.13/transforms/5835e350e6865b441f33e3c5b48fed87/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+143                android:value="androidx.startup" />
+143-->[androidx.emoji2:emoji2:1.2.0] /Users/bierlich/.gradle/caches/8.13/transforms/5835e350e6865b441f33e3c5b48fed87/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+144            <meta-data
+144-->[androidx.lifecycle:lifecycle-process:2.8.0] /Users/bierlich/.gradle/caches/8.13/transforms/3eea3d8a6ede5613ac69bef6ac421d2b/transformed/lifecycle-process-2.8.0/AndroidManifest.xml:29:13-31:52
+145                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+145-->[androidx.lifecycle:lifecycle-process:2.8.0] /Users/bierlich/.gradle/caches/8.13/transforms/3eea3d8a6ede5613ac69bef6ac421d2b/transformed/lifecycle-process-2.8.0/AndroidManifest.xml:30:17-78
+146                android:value="androidx.startup" />
+146-->[androidx.lifecycle:lifecycle-process:2.8.0] /Users/bierlich/.gradle/caches/8.13/transforms/3eea3d8a6ede5613ac69bef6ac421d2b/transformed/lifecycle-process-2.8.0/AndroidManifest.xml:31:17-49
+147            <meta-data
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+148                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+148-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+149                android:value="androidx.startup" />
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+150        </provider>
+151
+152        <service
+152-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:39:9-45:35
+153            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+153-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:40:13-88
+154            android:directBootAware="false"
+154-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:41:13-44
+155            android:enabled="@bool/enable_system_alarm_service_default"
+155-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:42:13-72
+156            android:exported="false" />
+156-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:43:13-37
+157        <service
+157-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:46:9-52:35
+158            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+158-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:47:13-84
+159            android:directBootAware="false"
+159-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:48:13-44
+160            android:enabled="@bool/enable_system_job_service_default"
+160-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:49:13-70
+161            android:exported="true"
+161-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:50:13-36
+162            android:permission="android.permission.BIND_JOB_SERVICE" />
+162-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:51:13-69
+163        <service
+163-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:53:9-59:35
+164            android:name="androidx.work.impl.foreground.SystemForegroundService"
+164-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:54:13-81
+165            android:directBootAware="false"
+165-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:55:13-44
+166            android:enabled="@bool/enable_system_foreground_service_default"
+166-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:56:13-77
+167            android:exported="false" />
+167-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:57:13-37
+168
+169        <receiver
+169-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:61:9-66:35
+170            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+170-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:62:13-88
+171            android:directBootAware="false"
+171-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:63:13-44
+172            android:enabled="true"
+172-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:64:13-35
+173            android:exported="false" />
+173-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:65:13-37
+174        <receiver
+174-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:67:9-77:20
+175            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+175-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:68:13-106
+176            android:directBootAware="false"
+176-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:69:13-44
+177            android:enabled="false"
+177-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:70:13-36
+178            android:exported="false" >
+178-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:71:13-37
+179            <intent-filter>
+179-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:73:13-76:29
+180                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+180-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:74:17-87
+180-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:74:25-84
+181                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+181-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:75:17-90
+181-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:75:25-87
+182            </intent-filter>
+183        </receiver>
+184        <receiver
+184-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:78:9-88:20
+185            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+185-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:79:13-104
+186            android:directBootAware="false"
+186-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:80:13-44
+187            android:enabled="false"
+187-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:81:13-36
+188            android:exported="false" >
+188-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:82:13-37
+189            <intent-filter>
+189-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:84:13-87:29
+190                <action android:name="android.intent.action.BATTERY_OKAY" />
+190-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:85:17-77
+190-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:85:25-74
+191                <action android:name="android.intent.action.BATTERY_LOW" />
+191-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:86:17-76
+191-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:86:25-73
+192            </intent-filter>
+193        </receiver>
+194        <receiver
+194-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:89:9-99:20
+195            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+195-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:90:13-104
+196            android:directBootAware="false"
+196-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:91:13-44
+197            android:enabled="false"
+197-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:92:13-36
+198            android:exported="false" >
+198-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:93:13-37
+199            <intent-filter>
+199-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:95:13-98:29
+200                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+200-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:96:17-83
+200-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:96:25-80
+201                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+201-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:97:17-82
+201-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:97:25-79
+202            </intent-filter>
+203        </receiver>
+204        <receiver
+204-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:100:9-109:20
+205            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+205-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:101:13-103
+206            android:directBootAware="false"
+206-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:102:13-44
+207            android:enabled="false"
+207-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:103:13-36
+208            android:exported="false" >
+208-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:104:13-37
+209            <intent-filter>
+209-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:106:13-108:29
+210                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+210-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:107:17-79
+210-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:107:25-76
+211            </intent-filter>
+212        </receiver>
+213        <receiver
+213-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:110:9-121:20
+214            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+214-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:111:13-88
+215            android:directBootAware="false"
+215-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:112:13-44
+216            android:enabled="false"
+216-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:113:13-36
+217            android:exported="false" >
+217-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:114:13-37
+218            <intent-filter>
+218-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:116:13-120:29
+219                <action android:name="android.intent.action.BOOT_COMPLETED" />
+219-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:117:17-79
+219-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:117:25-76
+220                <action android:name="android.intent.action.TIME_SET" />
+220-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:118:17-73
+220-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:118:25-70
+221                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+221-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:119:17-81
+221-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:119:25-78
+222            </intent-filter>
+223        </receiver>
+224        <receiver
+224-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:122:9-131:20
+225            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+225-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:123:13-99
+226            android:directBootAware="false"
+226-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:124:13-44
+227            android:enabled="@bool/enable_system_alarm_service_default"
+227-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:125:13-72
+228            android:exported="false" >
+228-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:126:13-37
+229            <intent-filter>
+229-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:128:13-130:29
+230                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+230-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:129:17-98
+230-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:129:25-95
+231            </intent-filter>
+232        </receiver>
+233        <receiver
+233-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:132:9-142:20
+234            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+234-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:133:13-78
+235            android:directBootAware="false"
+235-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:134:13-44
+236            android:enabled="true"
+236-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:135:13-35
+237            android:exported="true"
+237-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:136:13-36
+238            android:permission="android.permission.DUMP" >
+238-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:137:13-57
+239            <intent-filter>
+239-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:139:13-141:29
+240                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+240-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:140:17-88
+240-->[androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:140:25-85
+241            </intent-filter>
+242        </receiver>
+243        <receiver
+243-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+244            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+244-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+245            android:directBootAware="false"
+245-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+246            android:enabled="true"
+246-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+247            android:exported="true"
+247-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+248            android:permission="android.permission.DUMP" >
+248-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+249            <intent-filter>
+249-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+250                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+250-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+250-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+251            </intent-filter>
+252            <intent-filter>
+252-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+253                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+253-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+253-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+254            </intent-filter>
+255            <intent-filter>
+255-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+256                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+256-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+256-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+257            </intent-filter>
+258            <intent-filter>
+258-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+259                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+259-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+259-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/bierlich/.gradle/caches/8.13/transforms/d2c6b503d0beae7835daadeb05c9d144/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+260            </intent-filter>
+261        </receiver>
+262    </application>
+263
+264</manifest>

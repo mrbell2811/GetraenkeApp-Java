@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CRITICAL: Material Design touch targets must be minimum 48dp (not px) -->
+    <dimen name="touch_target_min">48dp</dimen>
+    <!-- Portrait Mode Optimized Button Sizes -->
+    <dimen name="member_button_min_width">220dp</dimen>
+    <dimen name="member_button_height">160dp</dimen>
+    <dimen name="beverage_button_min_width">240dp</dimen>
+    <dimen name="beverage_button_height">180dp</dimen>
+    
+    <!-- Spacing -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+    
+    <!-- Padding -->
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_xlarge">32dp</dimen>
+    
+    <!-- Grid Layout -->
+    <dimen name="grid_spacing">12dp</dimen>
+    <dimen name="grid_margin">16dp</dimen>
+    
+    <!-- Text Sizes - Portrait Tablet Optimized -->
+    <dimen name="text_size_xlarge">40sp</dimen>
+    <dimen name="text_size_large">32sp</dimen>
+    <dimen name="text_size_medium">26sp</dimen>
+    <dimen name="text_size_small">22sp</dimen>
+    <dimen name="text_size_button">28sp</dimen>
+    
+    <!-- Quantity Controls -->
+    <dimen name="quantity_button_size">60dp</dimen>
+    <dimen name="quantity_text_size">32sp</dimen>
+    
+    <!-- Confirmation Dialog -->
+    <dimen name="dialog_corner_radius">8dp</dimen>
+    <dimen name="dialog_elevation">8dp</dimen>
+    
+    <!-- Admin Management -->
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="price_tag_radius">12dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="touch_target_size">48dp</dimen>
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_body">16sp</dimen>
+    <dimen name="text_size_caption">14sp</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Include database files for backup -->
+    <include domain="database" />
+    <!-- Include shared preferences for app settings -->
+    <include domain="sharedpref" />
+    <!-- Exclude sensitive data like password hashes -->
+    <exclude domain="sharedpref" path="admin_security_prefs.xml" />
+</full-backup-content>

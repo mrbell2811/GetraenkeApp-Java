@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "com.club.getraenkeapp-mergeDebugResources-46:/layout/activity_beverage.xml",
+        "source": "com.club.getraenkeapp-main-49:/layout/activity_beverage.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/item_beverage_statistic.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/item_beverage_statistic.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/activity_user_statistics.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_user_statistics.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/activity_consumption_overview.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_consumption_overview.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/activity_main.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/activity_beverage.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_beverage.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/item_admin_option.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/item_admin_option.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/dialog_add_member.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/dialog_add_member.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/activity_member_management.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_member_management.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/activity_admin.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_admin.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/item_beverage_management.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/item_beverage_management.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/item_consumption_overview.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/item_consumption_overview.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/dialog_confirmation.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/dialog_confirmation.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/item_member_button.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/item_member_button.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/activity_export_configuration.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_export_configuration.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/activity_beverage_management.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_beverage_management.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/item_member_management.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/item_member_management.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/item_beverage_button.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/item_beverage_button.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-mergeDebugResources-46:/layout/activity_quantity.xml",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_quantity.xml"
+    },
+    {
+        "merged": "com.club.getraenkeapp-mergeDebugResources-46:/layout/item_member_statistic.xml",
+        "source": "com.club.getraenkeapp-main-49:/layout/item_member_statistic.xml"
+    }
+]

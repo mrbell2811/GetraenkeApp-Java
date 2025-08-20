@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Landscape Mode Specific Dimensions -->
+    
+    <!-- Button Sizes - Optimized for Landscape Tablet (original sizes) -->
+    <dimen name="member_button_min_width">180dp</dimen>
+    <dimen name="member_button_height">140dp</dimen>
+    <dimen name="beverage_button_min_width">200dp</dimen>
+    <dimen name="beverage_button_height">160dp</dimen>
+    
+    <!-- Text Sizes - Landscape optimized -->
+    <dimen name="text_size_large">30sp</dimen>
+    <dimen name="text_size_medium">24sp</dimen>
+    <dimen name="text_size_small">20sp</dimen>
+    <dimen name="text_size_button">26sp</dimen>
+    
+    <!-- Grid Layout - Landscape allows more columns -->
+    <dimen name="grid_spacing">12dp</dimen>
+    <dimen name="grid_margin">16dp</dimen>
+    
+    <!-- Padding and Margins - Standard for landscape -->
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    
+    <!-- Quantity Controls -->
+    <dimen name="quantity_button_size">60dp</dimen>
+    <dimen name="quantity_text_size">32sp</dimen>
+</resources>

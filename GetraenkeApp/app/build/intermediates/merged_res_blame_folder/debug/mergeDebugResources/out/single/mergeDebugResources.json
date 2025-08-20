@@ -1,0 +1,182 @@
+[
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_ic_cold_drink.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/ic_cold_drink.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_ic_edit.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_ic_alcoholic_drink.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/ic_alcoholic_drink.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_ic_add.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/ic_add.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_ic_warning.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/ic_warning.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_activity_beverage_management.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_beverage_management.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_activity_quantity.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_quantity.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_background_price_tag.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/background_price_tag.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_dialog_confirmation.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/dialog_confirmation.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_activity_user_statistics.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_user_statistics.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_ic_local_bar.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/ic_local_bar.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_beverage_alcohol_background.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/beverage_alcohol_background.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_ic_people_outline.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/ic_people_outline.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_activity_beverage.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_beverage.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_dialog_add_member.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/dialog_add_member.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_activity_export_configuration.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_export_configuration.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_item_member_management.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/item_member_management.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_beverage_cold_background.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/beverage_cold_background.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_activity_consumption_overview.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_consumption_overview.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_background_search.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/background_search.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_club_gradient.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/club_gradient.xml"
+    },
+    {
+        "merged": "com.club.getraenkeapp-debug-47:/layout_item_member_statistic.xml.flat",
+        "source": "com.club.getraenkeapp-main-49:/layout/item_member_statistic.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/xml_file_paths.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/xml/file_paths.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_member_card_background.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/member_card_background.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_item_member_button.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/item_member_button.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_item_beverage_statistic.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/item_beverage_statistic.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_ic_delete.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/ic_delete.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.club.getraenkeapp-debug-47:/layout_activity_beverage.xml.flat",
+        "source": "com.club.getraenkeapp-main-49:/layout/activity_beverage.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/xml_backup_rules.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_activity_admin.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_admin.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_item_consumption_overview.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/item_consumption_overview.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_activity_member_management.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_member_management.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_item_beverage_management.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/item_beverage_management.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_member_avatar_background.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/member_avatar_background.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_ic_hot_drink.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/ic_hot_drink.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_activity_main.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_item_admin_option.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/item_admin_option.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/drawable_beverage_warm_background.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/drawable/beverage_warm_background.xml"
+    },
+    {
+        "merged": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-debug-47:/layout_item_beverage_button.xml.flat",
+        "source": "/Users/bierlich/.gradle/daemon/8.13/com.club.getraenkeapp-main-49:/layout/item_beverage_button.xml"
+    }
+]

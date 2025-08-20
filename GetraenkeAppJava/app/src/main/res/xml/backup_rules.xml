@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Include the app's database -->
+    <include domain="database" path="getraenke_database.db" />
+    
+    <!-- Include shared preferences -->
+    <include domain="sharedpref" path="app_preferences.xml" />
+    
+    <!-- Exclude cache directories -->
+    <exclude domain="cache" />
+    <exclude domain="external-cache" />
+    
+    <!-- Exclude temporary files -->
+    <exclude domain="files" path="temp/" />
+</full-backup-content>

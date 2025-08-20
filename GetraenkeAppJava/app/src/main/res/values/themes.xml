@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    <!-- Base Club Theme -->
+    <style name="Theme.GetraenkeApp" parent="Theme.Material3.DayNight">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/club_primary</item>
+        <item name="colorPrimaryVariant">@color/club_primary_dark</item>
+        <item name="colorOnPrimary">@color/club_white</item>
+        
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/club_black</item>
+        <item name="colorSecondaryVariant">@color/club_gray</item>
+        <item name="colorOnSecondary">@color/club_white</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/club_white</item>
+        <item name="colorSurface">@color/club_white</item>
+        <item name="colorOnBackground">@color/club_black</item>
+        <item name="colorOnSurface">@color/club_black</item>
+        
+        <!-- Error colors -->
+        <item name="colorError">@color/error_red</item>
+        <item name="colorOnError">@color/club_white</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/club_primary_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/club_primary_dark</item>
+        
+        <!-- Text appearance -->
+        <item name="android:textColorPrimary">@color/club_black</item>
+        <item name="android:textColorSecondary">@color/club_gray</item>
+    </style>
+    
+    <!-- No Action Bar Theme for Main Activity -->
+    <style name="Theme.GetraenkeApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    
+    <!-- Member Button Style -->
+    <style name="MemberButton" parent="Widget.Material3.Button">
+        <item name="android:layout_height">@dimen/member_button_height</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:textColor">@color/club_white</item>
+        <item name="backgroundTint">@color/club_primary</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="android:elevation">@dimen/card_elevation</item>
+    </style>
+    
+    <!-- Beverage Button Style -->
+    <style name="BeverageButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_height">@dimen/beverage_button_height</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/club_black</item>
+        <item name="strokeColor">@color/club_primary</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="rippleColor">@color/club_primary_light</item>
+    </style>
+    
+    <!-- Quantity Control Button Style -->
+    <style name="QuantityButton" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">32dp</item>
+        <item name="backgroundTint">@color/club_primary_light</item>
+        <item name="android:textColor">@color/club_primary_dark</item>
+    </style>
+    
+    <!-- Admin Button Style -->
+    <style name="AdminButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/club_gray</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="rippleColor">@color/club_gray_light</item>
+    </style>
+    
+    <!-- Title Text Style -->
+    <style name="TitleText">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textColor">@color/club_black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <!-- Price Text Style -->
+    <style name="PriceText">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/club_primary_dark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <!-- Card Style -->
+    <style name="ClubCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardBackgroundColor">@color/club_white</item>
+        <item name="android:layout_margin">@dimen/margin_medium</item>
+    </style>
+    
+</resources>

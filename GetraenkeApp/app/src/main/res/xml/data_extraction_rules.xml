@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Include database files for cloud backup -->
+        <include domain="database" />
+        <!-- Include shared preferences for app settings -->
+        <include domain="sharedpref" />
+        <!-- Exclude sensitive admin data from cloud backup -->
+        <exclude domain="sharedpref" path="admin_security_prefs.xml" />
+    </cloud-backup>
+    
+    <device-transfer>
+        <!-- Allow database transfer for device migration -->
+        <include domain="database" />
+        <!-- Allow preferences transfer -->
+        <include domain="sharedpref" />
+        <!-- Exclude admin passwords from device transfer -->
+        <exclude domain="sharedpref" path="admin_security_prefs.xml" />
+    </device-transfer>
+</data-extraction-rules>

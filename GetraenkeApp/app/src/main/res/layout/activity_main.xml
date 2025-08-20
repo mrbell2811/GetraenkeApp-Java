@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/club_background"
+    android:padding="@dimen/padding_medium"
+    tools:context=".ui.main.MainActivity">
+
+    <!-- Header with Date/Time and Admin Button -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/padding_medium"
+        android:paddingVertical="@dimen/padding_large"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mittwoch, 20. August 2025"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold"
+                android:textColor="@color/club_on_background"
+                android:gravity="start"
+                tools:text="Mittwoch, 20. August 2025" />
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="09:47"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/club_muted_foreground"
+                android:gravity="start"
+                tools:text="09:47" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonOverview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Übersicht"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold"
+                android:textColor="@color/club_on_primary"
+                android:background="@drawable/club_gradient"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="12dp"
+                android:minWidth="80dp"
+                android:gravity="center"
+                android:elevation="4dp"
+                android:stateListAnimator="@null" />
+
+            <Button
+                android:id="@+id/buttonAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/admin_access"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold"
+                android:textColor="@color/club_on_primary"
+                android:background="@drawable/club_gradient"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="12dp"
+                android:minWidth="80dp"
+                android:gravity="center"
+                android:elevation="4dp"
+                android:stateListAnimator="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Member Name Grid -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMembers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_large"
+        android:paddingHorizontal="@dimen/padding_small"
+        android:paddingVertical="@dimen/padding_medium"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_member_button"
+        tools:itemCount="12" />
+
+    <!-- Loading Indicator -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/recyclerViewMembers"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerViewMembers"
+        app:layout_constraintStart_toStartOf="@id/recyclerViewMembers"
+        app:layout_constraintEnd_toEndOf="@id/recyclerViewMembers" />
+
+    <!-- Empty State Message -->
+    <TextView
+        android:id="@+id/textViewEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keine Mitglieder gefunden.\nBitte Admin kontaktieren."
+        android:textAppearance="@style/TextAppearance.GetraenkeApp.Body"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/recyclerViewMembers"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerViewMembers"
+        app:layout_constraintStart_toStartOf="@id/recyclerViewMembers"
+        app:layout_constraintEnd_toEndOf="@id/recyclerViewMembers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

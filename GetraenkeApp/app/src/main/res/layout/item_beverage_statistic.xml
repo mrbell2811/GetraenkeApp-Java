@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_medium"
+    android:layout_marginVertical="@dimen/margin_small"
+    android:background="@drawable/member_card_background">
+
+    <!-- Top Row: Beverage Name and Quantity -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/margin_small">
+
+        <TextView
+            android:id="@+id/textViewBeverageName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bier 0,5L"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:textColor="@color/club_on_surface" />
+
+        <TextView
+            android:id="@+id/textViewQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5x"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:textColor="@color/club_primary"
+            android:minWidth="60dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Progress Bar for Visual Representation -->
+    <ProgressBar
+        android:id="@+id/progressBarConsumption"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginBottom="@dimen/margin_small"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progressTint="@color/club_primary"
+        android:progressBackgroundTint="@color/club_muted_foreground"
+        android:max="100" />
+
+    <!-- Bottom Row: Pricing Information -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textViewTotalPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="12.50 €"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:textColor="@color/club_on_surface" />
+
+        <TextView
+            android:id="@+id/textViewAveragePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ø 2.50 €"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/club_muted_foreground"
+            android:minWidth="80dp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+</LinearLayout>
