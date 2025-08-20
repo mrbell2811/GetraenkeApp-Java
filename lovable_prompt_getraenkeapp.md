@@ -4,7 +4,7 @@
 Transform the GetränkeApp (Beverage Booking Club App) from a functional Java Android tablet application into a modern, beautifully designed web application with exceptional UI/UX. The current system is a local-first beverage tracking solution for a 20-member club running on a Lenovo TabTB311FU tablet.
 
 ## GitHub Integration Setup
-- **Repository**: https://github.com/bierlich/GetraenkeApp-Java
+- **Repository**: https://github.com/mrbell2811/GetraenkeApp-Java
 - **Connect to existing repo**: The current Java implementation provides complete business logic reference
 - **Branch strategy**: Use main branch for Lovable development, sync changes bidirectionally
 - **Code context**: All existing entities, database schema, and UI patterns available for reference
