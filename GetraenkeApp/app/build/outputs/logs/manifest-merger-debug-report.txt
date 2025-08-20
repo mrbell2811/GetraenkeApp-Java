@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:28:9-36:20
+INJECTED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:31:9-39:20
 	android:grantUriPermissions
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:32:13-47
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:35:13-47
 	android:authorities
 		INJECTED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:30:13-64
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:33:13-64
 	android:exported
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:31:13-37
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:29:13-62
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:32:13-62
 manifest
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:2:1-113:12
-INJECTED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:2:1-113:12
-INJECTED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:2:1-113:12
-INJECTED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:2:1-113:12
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:2:1-123:12
+INJECTED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:2:1-123:12
+INJECTED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:2:1-123:12
+INJECTED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:2:1-123:12
 MERGED from [androidx.databinding:viewbinding:8.12.1] /Users/bierlich/.gradle/caches/8.13/transforms/29de6f9437743c30cb9cd727e863283e/transformed/viewbinding-8.12.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.12.0] /Users/bierlich/.gradle/caches/8.13/transforms/f37a342479272de4ffb1579d99ab8062/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-runtime:2.6.1] /Users/bierlich/.gradle/caches/8.13/transforms/b1c5def6251b38344c378a1c8ee013a5/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
@@ -102,9 +102,13 @@ MERGED from [androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.
 MERGED from [androidx.work:work-runtime:2.9.0] /Users/bierlich/.gradle/caches/8.13/transforms/84953f9a76922a7625e831cb220e8525/transformed/work-runtime-2.9.0/AndroidManifest.xml:24:5-79
 	android:name
 		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:13:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:16:5-67
+	android:name
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:16:22-64
 application
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:15:5-111:19
-INJECTED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:15:5-111:19
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:18:5-121:19
+INJECTED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:18:5-121:19
 MERGED from [com.google.android.material:material:1.12.0] /Users/bierlich/.gradle/caches/8.13/transforms/f37a342479272de4ffb1579d99ab8062/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /Users/bierlich/.gradle/caches/8.13/transforms/f37a342479272de4ffb1579d99ab8062/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.room:room-runtime:2.6.1] /Users/bierlich/.gradle/caches/8.13/transforms/b1c5def6251b38344c378a1c8ee013a5/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
@@ -130,137 +134,147 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/bierlich/.gradle/cac
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] /Users/bierlich/.gradle/caches/8.13/transforms/553e2a7cf28ff69fc2b4eb122e33997d/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:23:9-35
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:26:9-35
 	android:label
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:21:9-41
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:24:9-41
 	android:fullBackupContent
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:19:9-54
-	android:roundIcon
 		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:22:9-54
+	android:roundIcon
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:25:9-54
 	tools:targetApi
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:25:9-29
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:28:9-29
 	android:icon
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:20:9-43
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:23:9-43
 	android:allowBackup
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:20:9-35
 	android:theme
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:24:9-50
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:27:9-50
 	android:dataExtractionRules
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:18:9-65
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:21:9-65
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:16:9-45
-activity#com.club.getraenkeapp.ui.main.MainActivity
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:39:9-48:20
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:19:9-45
+activity#com.club.getraenkeapp.ui.webview.WebViewActivity
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:42:9-51:20
 	android:screenOrientation
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:42:13-52
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:45:13-52
 	android:exported
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:41:13-36
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:44:13-36
 	android:theme
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:43:13-66
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:46:13-66
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:40:13-49
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:43:13-55
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:44:13-47:29
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:47:13-50:29
 action#android.intent.action.MAIN
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:45:17-69
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:48:17-69
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:45:25-66
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:48:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:46:17-77
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:49:17-77
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:46:27-74
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:49:27-74
+activity#com.club.getraenkeapp.ui.main.MainActivity
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:54:9-58:69
+	android:screenOrientation
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:57:13-52
+	android:exported
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:56:13-37
+	android:theme
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:58:13-66
+	android:name
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:55:13-49
 activity#com.club.getraenkeapp.ui.beverage.BeverageActivity
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:51:9-55:57
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:61:9-65:57
 	android:screenOrientation
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:54:13-52
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:64:13-52
 	android:exported
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:53:13-37
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:63:13-37
 	android:theme
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:55:13-54
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:65:13-54
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:52:13-57
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:62:13-57
 activity#com.club.getraenkeapp.ui.quantity.QuantityActivity
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:58:9-62:57
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:68:9-72:57
 	android:screenOrientation
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:61:13-52
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:71:13-52
 	android:exported
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:60:13-37
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:70:13-37
 	android:theme
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:62:13-54
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:72:13-54
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:59:13-57
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:69:13-57
 activity#com.club.getraenkeapp.ui.admin.AdminActivity
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:65:9-69:57
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:75:9-79:57
 	android:screenOrientation
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:68:13-52
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:78:13-52
 	android:exported
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:67:13-37
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:77:13-37
 	android:theme
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:69:13-54
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:79:13-54
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:66:13-51
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:76:13-51
 activity#com.club.getraenkeapp.ui.admin.MemberManagementActivity
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:72:9-76:57
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:82:9-86:57
 	android:screenOrientation
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:75:13-52
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:85:13-52
 	android:exported
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:74:13-37
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:84:13-37
 	android:theme
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:76:13-54
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:86:13-54
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:73:13-62
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:83:13-62
 activity#com.club.getraenkeapp.ui.admin.BeverageManagementActivity
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:79:9-83:57
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:89:9-93:57
 	android:screenOrientation
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:82:13-52
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:92:13-52
 	android:exported
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:81:13-37
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:91:13-37
 	android:theme
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:83:13-54
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:93:13-54
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:80:13-64
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:90:13-64
 activity#com.club.getraenkeapp.ui.admin.ExportConfigurationActivity
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:86:9-90:57
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:96:9-100:57
 	android:screenOrientation
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:89:13-52
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:99:13-52
 	android:exported
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:88:13-37
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:98:13-37
 	android:theme
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:90:13-54
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:100:13-54
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:87:13-65
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:97:13-65
 activity#com.club.getraenkeapp.ui.statistics.UserStatisticsActivity
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:93:9-97:57
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:103:9-107:57
 	android:screenOrientation
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:96:13-52
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:106:13-52
 	android:exported
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:95:13-37
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:105:13-37
 	android:theme
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:97:13-54
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:107:13-54
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:94:13-65
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:104:13-65
 activity#com.club.getraenkeapp.ui.overview.ConsumptionOverviewActivity
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:100:9-104:57
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:110:9-114:57
 	android:screenOrientation
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:103:13-52
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:113:13-52
 	android:exported
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:102:13-37
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:112:13-37
 	android:theme
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:104:13-54
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:114:13-54
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:101:13-68
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:111:13-68
 service#com.club.getraenkeapp.service.AutoBackupService
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:107:9-109:40
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:117:9-119:40
 	android:exported
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:109:13-37
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:119:13-37
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:108:13-54
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:118:13-54
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:33:13-35:54
+ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:36:13-38:54
 	android:resource
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:35:17-51
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:38:17-51
 	android:name
-		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:34:17-67
+		ADDED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml:37:17-67
 uses-sdk
 INJECTED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/bierlich/Getraenkeliste3/GetraenkeApp/app/src/main/AndroidManifest.xml

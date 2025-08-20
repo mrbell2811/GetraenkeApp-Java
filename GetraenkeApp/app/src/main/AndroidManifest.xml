@@ -11,6 +11,9 @@
     
     <!-- Network state for email export functionality -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- Internet permission for WebView local file access -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".GetraenkeApplication"
@@ -35,9 +38,9 @@
                 android:resource="@xml/file_paths" />
         </provider>
         
-        <!-- Main Activity - Member Name Grid -->
+        <!-- WebView Activity - React Frontend Integration -->
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name=".ui.webview.WebViewActivity"
             android:exported="true"
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.GetraenkeApp.NoActionBar">
@@ -46,6 +49,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <!-- Main Activity - Member Name Grid (Legacy) -->
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="false"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.GetraenkeApp.NoActionBar" />
         
         <!-- Beverage Selection Activity -->
         <activity
